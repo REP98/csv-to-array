@@ -1,6 +1,6 @@
 {
     "name": "rep98/csv-to-array",
-    "description": "Combierte Archivos CSV a array php",
+    "description": "Combierte Archivos CSV a xml, json y array en php",
     "type": "library",
     "license": "MIT",
     "autoload": {

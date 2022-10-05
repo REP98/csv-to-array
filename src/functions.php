@@ -6,7 +6,7 @@ use CsvTo\Create;
 use CsvTo\Json;
 use CsvTo\Xml;
 /**
- * Funciones de Conversion
+ * Funciones de Conversión
  * CSV ==> Array
  */
 
@@ -92,7 +92,8 @@ if (!function_exists("csv_to_export_xml")) {
 	 * @param  array  $config Configuraciones
 	 * @return string
 	 */
-	function csv_to_export_xml(string $file, string $path, array $config = []) {
+	function csv_to_export_xml(string $file, string $path, array $config = [])
+	{
 		$config['export'] = $path;
 		return Xml::file($file, $config);
 	}
@@ -117,7 +118,7 @@ if (!function_exists('array_to_csv')) {
 // XML ==> CSV
 if (!function_exists('xml_to_csv')) {
 	/**
-	 * Combierte un XML a CSV
+	 * Convierte un XML a CSV
 	 * @param  string $data   
 	 * @param  string $path   
 	 * @param  array  $config 
@@ -135,7 +136,7 @@ if (!function_exists('xml_to_csv')) {
 // JSON ==> CSV
 if (!function_exists('json_to_csv')) {
 	/**
-	 * Combierte un JSON a CSV
+	 * Convierte un JSON a CSV
 	 * @param  string $data
 	 * @param  string $path	
 	 * @param  array  $config

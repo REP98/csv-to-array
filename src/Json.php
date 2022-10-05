@@ -4,7 +4,7 @@ namespace CsvTo;
 
 use CsvTo\Load;
 /**
- * Combierte CSV a un JSON
+ * Convierte CSV a un JSON
  */
 class Json
 {
@@ -14,7 +14,7 @@ class Json
 	 */
 	protected bool $setHeaderJson = false;
 	/**
-	 * Contructor de la clase \CsvTo\Json
+	 * Constructor de la clase \CsvTo\Json
 	 * @param string $file   Nombre del archivo CSV
 	 * @param array  $config Configuraciones
 	 * @return \CsvTo\Json
@@ -56,7 +56,7 @@ class Json
 		}		
 	}
 	/**
-	 * Metodo estatico de Json::__construct(string $file, array $config = []) y retorna un Json
+	 * Método estático de Json::__construct(string $file, array $config = []) y retorna un Json
 	 * @param  string $file
 	 * @param  array  $config
 	 * @return string

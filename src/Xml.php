@@ -5,7 +5,7 @@ namespace CsvTo;
 use CsvTo\Load;
 use DomDocument;
 /**
- * Combierte CSV a XML
+ * Convierte CSV a XML
  */
 class Xml
 {
@@ -108,7 +108,7 @@ class Xml
 		return $stringXml;
 	}
 	/**
-	 * Escapa los texto para su conversion en etiqueta
+	 * Escapa los texto para su conversión en etiqueta
 	 * @param  string $tag
 	 * @return string
 	 */
@@ -136,7 +136,7 @@ class Xml
 	        $string
 	    );
 	 
-	    //Esta parte se encarga de eliminar cualquier caracter extraño
+	    //Esta parte se encarga de eliminar cualquier carácter extraño
 	    $string = str_replace(
 	        [
 	        	"\"", "¨", "º", "-", "~",
@@ -164,7 +164,7 @@ class Xml
 		}
 	}
 	/**
-	 * Metodo estatico de Xml::__construct(string $file, array $config = []) y retorna un Json
+	 * Método estático de Xml::__construct(string $file, array $config = []) y retorna un Json
 	 * @param  string $file
 	 * @param  array  $config
 	 * @return string
@@ -185,7 +185,7 @@ class Xml
 		return substr($file, 0, 5) == "<?xml";
 	}
 	/**
-	 * Combierte un XML en Array
+	 * Convierte un XML en Array
 	 * @param  string $xml
 	 * @return array
 	 */

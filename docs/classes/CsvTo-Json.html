@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-            <title>Documentation</title>
+            <title>Convertidor CSV</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="../">
@@ -24,7 +24,7 @@
     </head>
 <body id="top">
     <header class="phpdocumentor-header phpdocumentor-section">
-    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">Documentation</a></h1>
+    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">Convertidor CSV</a></h1>
     <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
     <label class="phpdocumentor-header__menu-icon" for="menu-button">
         <i class="fas fa-bars"></i>
@@ -108,7 +108,7 @@
 
     </aside>
 
-            <p class="phpdocumentor-summary">Combierte CSV a un JSON</p>
+            <p class="phpdocumentor-summary">Convierte CSV a un JSON</p>
 
 
 
@@ -136,14 +136,14 @@
     <span>
                                 &nbsp;: <a href="classes/CsvTo-Json.html"><abbr title="\CsvTo\Json">Json</abbr></a>    </span>
 </dt>
-<dd>Contructor de la clase \CsvTo\Json</dd>
+<dd>Constructor de la clase \CsvTo\Json</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/CsvTo-Json.html#method_file">file()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd>Metodo estatico de Json::__construct(string $file, array $config = []) y retorna un Json</dd>
+<dd>Método estático de Json::__construct(string $file, array $config = []) y retorna un Json</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/CsvTo-Json.html#method_getData">getData()</a>
@@ -158,6 +158,20 @@
                                 &nbsp;: void    </span>
 </dt>
 <dd>Si `$setHeaderJson` es `true` se establece las cabeceras para retornar una respuesta json</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/CsvTo-Json.html#method_isJson">isJson()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>Valida si es un JSON</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/CsvTo-Json.html#method_toArray">toArray()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>Convierte un Json a Array</dd>
 
         </dl>
 
@@ -228,7 +242,7 @@
 
     </aside>
 
-        <p class="phpdocumentor-summary">Contructor de la clase \CsvTo\Json</p>
+        <p class="phpdocumentor-summary">Constructor de la clase \CsvTo\Json</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -282,7 +296,7 @@
 
     </aside>
 
-        <p class="phpdocumentor-summary">Metodo estatico de Json::__construct(string $file, array $config = []) y retorna un Json</p>
+        <p class="phpdocumentor-summary">Método estático de Json::__construct(string $file, array $config = []) y retorna un Json</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -389,6 +403,92 @@
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_isJson">
+        isJson()
+        <a href="classes/CsvTo-Json.html#method_isJson" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Json.php"><a href="files/src-json.html"><abbr title="src/Json.php">Json.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">75</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Valida si es un JSON</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">isJson</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$jsonString</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$jsonString</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_toArray">
+        toArray()
+        <a href="classes/CsvTo-Json.html#method_toArray" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Json.php"><a href="files/src-json.html"><abbr title="src/Json.php">Json.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">84</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Convierte un Json a Array</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">toArray</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\CsvTo\strng">strng</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$jsonString</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$jsonString</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\CsvTo\strng">strng</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
             &mdash;
         
     

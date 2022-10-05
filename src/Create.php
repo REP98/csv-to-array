@@ -7,7 +7,7 @@ use CsvTo\Json;
 use CsvTo\Xml;
 
 /**
- * Crea archivos CSV 
+ * Crea archivos CSV desde un Array, Json o Xml
  */
 class Create
 {	
@@ -22,22 +22,22 @@ class Create
 	 */
 	protected string $delimiter = ',';
 	/**
-	 * Caracater Circundante de Cada Campo
+	 * Carácter Circundante de Cada Campo
 	 * @var string
 	 */
 	protected string $enclosure = '"';
 	/**
-	 * Caracater de Escape
+	 * Carácter de Escape
 	 * @var string
 	 */
 	protected string $escape = "\\";
 	/**
-	 * Matriz de la cabezera
+	 * Matriz de la cabecera
 	 * @var array
 	 */
 	protected array $header = [];
 	/**
-	 * Matrix de Datos
+	 * Matriz de Datos
 	 * @var array
 	 */
 	protected array $data = [];
@@ -47,9 +47,20 @@ class Create
 	 */
 	protected string $path;
 	/**
-	 * Incia la creacion del CSV
-	 * @param array|string|mixed $data   La info, pude pasar un XML o Json es este parametro
-	 * @param array|string $config Matriz de configuraciones, o cadena de texto de la ruta donde volcar el csv
+	 * Inicia la creación del CSV
+	 *
+	 * Opciones de Configuraciones:
+	 * * *path* Ruta donde se creara el CSV
+	 * * *withoutHeader* Indica que no se usara las cabeceras por defecto es false
+	 * * *delimiter*  Delimitador del CSV
+	 * * *escape*  Carácter de Escape
+	 * * *enclosure* Carácter Circundante de Cada Campo
+	 *
+	 * ```php
+	 * $c = new Create([['ID' => 1, 'Name' => "User"]], ["delimiter" => ';']);
+	 * ```
+	 * @param array|string|mixed $data   La info, pude pasar un Array, XML o Json en es este parámetro
+	 * @param array|string $config Matriz de configuraciones, o cadena de texto de la ruta donde volcar el CSV
 	 * @return \CsvTo\Create
 	 */
 	function __construct($data, array|string $config)
@@ -154,7 +165,7 @@ class Create
 	/**
 	 * Establece si se usa el header o no, ademas obtiene los valores de la cabecera
 	 * @param bool $value
-	 * @return bool 	Retorna el valor actual de $withoutHeader que deberiaser igual al pasado.
+	 * @return bool 	Retorna el valor actual de $withoutHeader que debe ser igual al pasado.
 	 */
 	public function setWithoutHeader(bool $value): bool
 	{

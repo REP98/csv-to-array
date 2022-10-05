@@ -37,8 +37,8 @@ class Load
 	 * Carga el Archivo CSV y las configuraciones para su conversión
 	 * La configuraciones admitidas son:
 	 * * separator  Establece el delimitador de campos del CSV, por defecto se usa la coma `,`
-	 * * enclosure  Establece el carácter circundante de cada campo, por defecto se usa la comilla doble `"`
-	 * * escape		Establece el carácter de escape, por defecto se usa la barra inveritda `\`
+	 * * enclosure  Establece el carácter circundante de cada campo, por defecto se usa las comillas doble `"`
+	 * * escape		Establece el carácter de escape, por defecto se usa la barra invertida `\`
 	 * * withoutHeader Establece si el CSV no tiene cabecera, por defecto es `false`
 	 * @param string $files  Ruta con nombre del archivo csv
 	 * @param array  $config Configuraciones para su cargado
@@ -90,7 +90,7 @@ class Load
 		return array_key_exists($line, $this->lines) ? $this->lines[$line] : null;
 	}
 	/**
-	 * Establece las configuraciones y retoran una nueva instancia
+	 * Establece las configuraciones y retorna una nueva instancia
 	 * @param array $config matris de configuraciones
 	 * @return \CsvTo\Load|self
 	 */

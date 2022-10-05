@@ -25,7 +25,7 @@ class Arr extends Load implements ArrayAccess
 
 	}
 	/**
-	 * Esablece un parametro al CSV
+	 * Establece un parámetro al CSV
 	 * @param  mixed  $offset
 	 * @param  mixed  $value
 	 * @return void
@@ -39,7 +39,7 @@ class Arr extends Load implements ArrayAccess
 		}
 	}
 	/**
-	 * Verifica que un index exista
+	 * Verifica que un indice exista
 	 * @param  mixed  $offset
 	 * @return bool
 	 */

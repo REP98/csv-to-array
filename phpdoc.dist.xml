@@ -19,12 +19,14 @@
 				<!--1 or more repetitions:-->
 				<path>tests/**/*</path>
 				<path>vendor/**/*</path>
+				<path>docs/**/*</path>
 			</ignore>
 			<extensions>
 				<extension>php</extension>
 			</extensions>
-			<default-package-name>CsvTo</default-package-name>
 			<include-source>true</include-source>
+			<default-package-name>CsvTo</default-package-name>
 		</api>
 	</version>
+	<template name="default" />
 </phpdocumentor>
