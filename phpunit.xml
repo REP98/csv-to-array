@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.5/phpunit.xsd"
+         bootstrap="tests/bootstrap.php"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         executionOrder="depends,defects"
+         forceCoversAnnotation="true"
+         beStrictAboutCoversAnnotation="true"
+         beStrictAboutOutputDuringTests="true"
+         beStrictAboutTodoAnnotatedTests="true"
+         convertDeprecationsToExceptions="true"
+         failOnRisky="true"
+         failOnWarning="true"
+         verbose="true">
+    <testsuites>
+        <testsuite name="Test Suite">
+            <directory suffix="Test.php">./tests</directory>
+        </testsuite>
+    </testsuites>
+    <php>
+        <server name='HTTP_HOST' value='http://localhost' />
+        <server name='REQUEST_URI' value='/' />
+        <ini name="error_reporting" value="-1"/>
+        <ini name="xdebug.mode" value="coverage"/>
+        <env name="XDEBUG_MODE" value="coverage"/>
+        <ini name="date.timezone" value="America/Caracas" />
+        <ini name="intl.default_locale" value="C.UTF-8" />
+        <ini name="memory_limit" value="2048M" />
+    </php>
+    <coverage processUncoveredFiles="true">
+        <include>
+            <directory suffix=".php">./src/</directory>
+        </include>
+    </coverage>
+</phpunit>

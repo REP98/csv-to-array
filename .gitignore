@@ -1,0 +1,7 @@
+/vendor/
+.phpunit.*
+*.lock
+/tests/file/*2.csv
+/tests/file/*3.csv
+/tests/file/*4.csv
+/tests/file/*.xml
