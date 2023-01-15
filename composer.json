@@ -21,6 +21,12 @@
             "email": "delfinmundo@gmail.com"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/REP98/csv-to-array"
+        }
+    ],
     "prefer-stable": true,
     "support": {
         "email": "delfinmundo@gmail.com"
